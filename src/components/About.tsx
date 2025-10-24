@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { User } from "lucide-react";
+import profileImage from "@/assets/profile.jpg";
 
 const About = () => {
   return (
@@ -15,8 +15,12 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="animate-slide-in">
             <Card className="glass-effect p-8 hover-glow">
-              <div className="aspect-square rounded-2xl gradient-primary flex items-center justify-center">
-                <User className="h-32 w-32 text-primary-foreground" />
+              <div className="aspect-square rounded-2xl overflow-hidden">
+                <img 
+                  src={profileImage} 
+                  alt="Tajwar Razib - Mechanical Engineering Researcher" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </Card>
           </div>
