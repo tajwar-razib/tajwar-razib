@@ -22,21 +22,21 @@ const About = () => {
           </div>
 
           <div className="space-y-6 animate-slide-up">
-            <h3 className="text-3xl font-bold">Professional Background</h3>
+            <h3 className="text-3xl font-bold">Research-Driven Scholar</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Add your professional summary here. Describe your journey, key achievements, and what makes you unique in your field. Highlight your expertise and passion.
+              I am a research-driven scholar with a solid background in Thermodynamics, Heat Transfer, Molecular Dynamics, Additive Manufacturing, Control Systems, and expertise in Machine Learning. My work combines computational and data-driven approaches to investigate energy systems and thermal processes.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Include additional details about your approach to work, your values, and what drives you. This is your chance to tell your professional story.
+              Currently pursuing my Bachelor's degree in Mechanical Engineering at Bangladesh University of Engineering and Technology (BUET), I am committed to interdisciplinary exploration and academic advancement in various scientific domains. My research focuses on optimizing energy systems through advanced computational methods and machine learning algorithms.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               <Card className="p-4 text-center glass-effect hover-glow">
-                <div className="text-3xl font-bold gradient-text">X+</div>
-                <div className="text-sm text-muted-foreground mt-2">Years Experience</div>
+                <div className="text-3xl font-bold gradient-text">3.69</div>
+                <div className="text-sm text-muted-foreground mt-2">CGPA / 4.00</div>
               </Card>
               <Card className="p-4 text-center glass-effect hover-glow">
-                <div className="text-3xl font-bold gradient-text">X+</div>
-                <div className="text-sm text-muted-foreground mt-2">Projects Completed</div>
+                <div className="text-3xl font-bold gradient-text">10+</div>
+                <div className="text-sm text-muted-foreground mt-2">Research Publications</div>
               </Card>
             </div>
           </div>

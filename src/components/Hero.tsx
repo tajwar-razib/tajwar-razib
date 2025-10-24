@@ -18,33 +18,35 @@ const Hero = () => {
               <span className="gradient-text">Tajwar Razib</span>
             </h1>
             <p className="text-2xl md:text-3xl text-muted-foreground font-medium">
-              Professional Title | Expertise Area
+              Mechanical Engineering Researcher | ML & Thermodynamics Expert
             </p>
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Brief introduction about your professional background, core competencies, and what drives your passion in your field.
+            Research-driven scholar specializing in Thermodynamics, Heat Transfer, Molecular Dynamics, and Machine Learning. Combining computational and data-driven approaches to advance energy systems and thermal processes.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button size="lg" className="gradient-primary hover-glow">
+            <Button size="lg" className="gradient-primary hover-glow" onClick={() => window.location.href = 'mailto:tajwar021@gmail.com'}>
               <Mail className="mr-2 h-5 w-5" />
               Get In Touch
             </Button>
-            <Button size="lg" variant="outline" className="hover-glow">
+            <Button size="lg" variant="outline" className="hover-glow" onClick={() => window.open('/CV_Tajwar_Razib.pdf', '_blank')}>
               <FileText className="mr-2 h-5 w-5" />
               Download CV
             </Button>
           </div>
 
           <div className="flex gap-6 justify-center pt-6">
-            <a href="#" className="text-foreground/60 hover:text-primary transition-colors hover:scale-110 transform duration-200">
-              <Github className="h-6 w-6" />
+            <a href="https://orcid.org/0009-0001-6886-2649" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors hover:scale-110 transform duration-200">
+              <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 7.781c.48 0 .87.39.87.87 0 .48-.39.87-.87.87-.48 0-.87-.39-.87-.87 0-.48.39-.87.87-.87zm-.357 2.551h.714v7.668h-.714v-7.668zm3.714 0h2.357c2.265 0 3.357 1.377 3.357 3.051 0 1.674-1.092 3.051-3.357 3.051h-2.357v-6.102zm.714.612v4.878h1.643c1.674 0 2.643-.969 2.643-2.439 0-1.47-.969-2.439-2.643-2.439h-1.643z"/>
+              </svg>
             </a>
-            <a href="#" className="text-foreground/60 hover:text-primary transition-colors hover:scale-110 transform duration-200">
+            <a href="https://linkedin.com/in/tajwar-razib" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="h-6 w-6" />
             </a>
-            <a href="#" className="text-foreground/60 hover:text-primary transition-colors hover:scale-110 transform duration-200">
+            <a href="mailto:tajwar021@gmail.com" className="text-foreground/60 hover:text-primary transition-colors hover:scale-110 transform duration-200">
               <Mail className="h-6 w-6" />
             </a>
           </div>

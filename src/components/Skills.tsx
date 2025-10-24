@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Layers, Database, Wrench } from "lucide-react";
+import { Code, Layers, LineChart, Wrench } from "lucide-react";
 
 interface SkillCategoryProps {
   icon: React.ReactNode;
@@ -31,22 +31,22 @@ const Skills = () => {
     {
       icon: <Code className="h-5 w-5 text-primary-foreground" />,
       title: "Programming Languages",
-      skills: ["Language 1", "Language 2", "Language 3", "Language 4"]
+      skills: ["Python", "C", "C++", "MATLAB"]
     },
     {
       icon: <Layers className="h-5 w-5 text-primary-foreground" />,
-      title: "Frameworks & Libraries",
-      skills: ["Framework 1", "Framework 2", "Library 1", "Library 2"]
+      title: "Engineering Software",
+      skills: ["AutoCAD", "SolidWorks", "COMSOL", "LAMMPS"]
     },
     {
-      icon: <Database className="h-5 w-5 text-primary-foreground" />,
-      title: "Databases & Tools",
-      skills: ["Database 1", "Database 2", "Tool 1", "Tool 2"]
+      icon: <LineChart className="h-5 w-5 text-primary-foreground" />,
+      title: "Analysis & Plotting Tools",
+      skills: ["OriginPro", "Tecplot", "xyExtract", "Polymath Professionals"]
     },
     {
       icon: <Wrench className="h-5 w-5 text-primary-foreground" />,
-      title: "Other Skills",
-      skills: ["Skill A", "Skill B", "Skill C", "Skill D"]
+      title: "Research Expertise",
+      skills: ["Machine Learning", "Deep Learning", "Thermodynamics", "Heat Transfer", "Molecular Dynamics", "Additive Manufacturing", "Control Systems", "Metaheuristic Algorithms"]
     }
   ];
 
@@ -57,7 +57,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Skills & <span className="gradient-text">Expertise</span>
           </h2>
-          <p className="text-muted-foreground text-lg">Technologies I work with</p>
+          <p className="text-muted-foreground text-lg">Technologies and research areas I specialize in</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">

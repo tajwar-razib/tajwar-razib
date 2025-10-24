@@ -22,7 +22,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-muted-foreground">your.email@example.com</p>
+                  <a href="mailto:tajwar021@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    tajwar021@gmail.com
+                  </a>
                 </div>
               </div>
             </Card>
@@ -34,7 +36,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <p className="text-muted-foreground">+1 (234) 567-8900</p>
+                  <a href="tel:+8801782510340" className="text-muted-foreground hover:text-primary transition-colors">
+                    +880 1782510340
+                  </a>
                 </div>
               </div>
             </Card>
@@ -46,7 +50,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Location</h3>
-                  <p className="text-muted-foreground">City, Country</p>
+                  <p className="text-muted-foreground">Bashundhara R/A, Dhaka, Bangladesh</p>
                 </div>
               </div>
             </Card>
@@ -56,15 +60,29 @@ const Contact = () => {
             <Card className="glass-effect p-8">
               <h3 className="text-2xl font-bold mb-6">Connect With Me</h3>
               <div className="space-y-4">
-                <Button className="w-full justify-start gradient-primary hover-glow" size="lg">
+                <Button 
+                  className="w-full justify-start gradient-primary hover-glow" 
+                  size="lg"
+                  onClick={() => window.open('https://linkedin.com/in/tajwar-razib', '_blank')}
+                >
                   <Linkedin className="mr-3 h-5 w-5" />
                   LinkedIn Profile
                 </Button>
-                <Button className="w-full justify-start gradient-primary hover-glow" size="lg">
-                  <Github className="mr-3 h-5 w-5" />
-                  GitHub Profile
+                <Button 
+                  className="w-full justify-start gradient-primary hover-glow" 
+                  size="lg"
+                  onClick={() => window.open('https://orcid.org/0009-0001-6886-2649', '_blank')}
+                >
+                  <svg className="mr-3 h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 7.781c.48 0 .87.39.87.87 0 .48-.39.87-.87.87-.48 0-.87-.39-.87-.87 0-.48.39-.87.87-.87zm-.357 2.551h.714v7.668h-.714v-7.668zm3.714 0h2.357c2.265 0 3.357 1.377 3.357 3.051 0 1.674-1.092 3.051-3.357 3.051h-2.357v-6.102zm.714.612v4.878h1.643c1.674 0 2.643-.969 2.643-2.439 0-1.47-.969-2.439-2.643-2.439h-1.643z"/>
+                  </svg>
+                  ORCID Profile
                 </Button>
-                <Button className="w-full justify-start gradient-primary hover-glow" size="lg">
+                <Button 
+                  className="w-full justify-start gradient-primary hover-glow" 
+                  size="lg"
+                  onClick={() => window.location.href = 'mailto:tajwar021@gmail.com'}
+                >
                   <Mail className="mr-3 h-5 w-5" />
                   Send Email
                 </Button>
