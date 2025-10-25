@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Research-driven scholar specializing in Thermodynamics, Heat Transfer, Molecular Dynamics, and Machine Learning. Combining computational and data-driven approaches to advance energy systems and thermal processes.
+            Pioneering researcher at the intersection of Thermodynamics, Heat Transfer, Additive Manufacturing, and Machine Learning. Leveraging data-driven methodologies to revolutionize energy systems and advanced manufacturing processes.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center pt-4">
