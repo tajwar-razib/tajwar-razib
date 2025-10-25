@@ -28,10 +28,10 @@ const About = () => {
           <div className="space-y-6 animate-slide-up">
             <h3 className="text-3xl font-bold">Research-Driven Scholar</h3>
             <p className="text-muted-foreground leading-relaxed">
-              I am a research-driven scholar with a solid background in Thermodynamics, Heat Transfer, Molecular Dynamics, Additive Manufacturing, Control Systems, and expertise in Machine Learning. My work combines computational and data-driven approaches to investigate energy systems and thermal processes.
+              As a passionate researcher, I specialize in Thermodynamics, Heat Transfer, Molecular Dynamics, Additive Manufacturing, Control Systems, and Machine Learning. My expertise lies at the intersection of computational methods and data-driven analysis, enabling me to push the boundaries of energy systems and thermal process optimization.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Currently pursuing my Bachelor's degree in Mechanical Engineering at Bangladesh University of Engineering and Technology (BUET), I am committed to interdisciplinary exploration and academic advancement in various scientific domains. My research focuses on optimizing energy systems through advanced computational methods and machine learning algorithms.
+              Currently completing my Bachelor's in Mechanical Engineering at Bangladesh University of Engineering and Technology (BUET), I'm dedicated to advancing interdisciplinary research across multiple scientific fields. My work focuses on leveraging cutting-edge machine learning algorithms and computational techniques to revolutionize energy efficiency and additive manufacturing processes.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               <Card className="p-4 text-center glass-effect hover-glow">

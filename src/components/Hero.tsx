@@ -18,7 +18,7 @@ const Hero = () => {
               <span className="gradient-text">Tajwar Razib</span>
             </h1>
             <p className="text-2xl md:text-3xl text-muted-foreground font-medium">
-              Mechanical Engineering Researcher | ML & Thermodynamics Expert
+              Mechanical Engineering Researcher
             </p>
           </div>
 
