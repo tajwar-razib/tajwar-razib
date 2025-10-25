@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Pioneering researcher at the intersection of Thermodynamics, Heat Transfer, Additive Manufacturing, and Machine Learning. Leveraging data-driven methodologies to revolutionize energy systems and advanced manufacturing processes.
+            Advancing the frontiers of Thermodynamics, Heat Transfer, Molecular Dynamics, Additive Manufacturing, and Machine Learning. Integrating computational simulations with data-driven techniques to transform energy systems and manufacturing innovation.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center pt-4">
