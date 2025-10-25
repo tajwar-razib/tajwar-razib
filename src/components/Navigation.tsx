@@ -1,54 +1,53 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const Navigation = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+interface NavigationProps {
+  activeSection: string;
+  onSectionChange: (section: string) => void;
+}
+
+const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const navItems = [
-    { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
-    { label: "Publications", href: "#publications" },
-    { label: "Experience", href: "#experience" },
-    { label: "Skills", href: "#skills" },
-    { label: "Education", href: "#education" },
-    { label: "Contact", href: "#contact" }
+    { label: "Home", value: "home" },
+    { label: "About", value: "about" },
+    { label: "Projects", value: "projects" },
+    { label: "Publications", value: "publications" },
+    { label: "Experience", value: "experience" },
+    { label: "Skills", value: "skills" },
+    { label: "Education", value: "education" },
+    { label: "Contact", value: "contact" }
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
-    }
+  const handleNavClick = (value: string) => {
+    onSectionChange(value);
+    setIsMobileMenuOpen(false);
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "glass-effect shadow-lg" : "bg-transparent"
-    }`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 glass-effect shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-2xl font-bold gradient-text">
+          <button 
+            onClick={() => handleNavClick("home")}
+            className="text-2xl font-bold gradient-text"
+          >
             TR
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <button
-                key={item.label}
-                onClick={() => scrollToSection(item.href)}
-                className="text-foreground/80 hover:text-foreground transition-colors"
+                key={item.value}
+                onClick={() => handleNavClick(item.value)}
+                className={`transition-all duration-300 ${
+                  activeSection === item.value
+                    ? "text-primary font-semibold"
+                    : "text-foreground/80 hover:text-foreground"
+                }`}
               >
                 {item.label}
               </button>
@@ -71,9 +70,13 @@ const Navigation = () => {
           <div className="md:hidden py-4 space-y-2 animate-slide-up">
             {navItems.map((item) => (
               <button
-                key={item.label}
-                onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-2 hover:bg-muted rounded-lg transition-colors"
+                key={item.value}
+                onClick={() => handleNavClick(item.value)}
+                className={`block w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                  activeSection === item.value
+                    ? "bg-primary text-primary-foreground font-semibold"
+                    : "hover:bg-muted"
+                }`}
               >
                 {item.label}
               </button>

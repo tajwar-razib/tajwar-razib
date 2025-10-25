@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -9,21 +10,43 @@ import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 
 const Index = () => {
+  const [activeSection, setActiveSection] = useState("home");
+
+  const renderSection = () => {
+    switch (activeSection) {
+      case "home":
+        return <Hero />;
+      case "about":
+        return <About />;
+      case "projects":
+        return <Projects />;
+      case "publications":
+        return <Publications />;
+      case "experience":
+        return <Experience />;
+      case "skills":
+        return <Skills />;
+      case "education":
+        return <Education />;
+      case "contact":
+        return <Contact />;
+      default:
+        return <Hero />;
+    }
+  };
+
   return (
     <div className="min-h-screen">
-      <Navigation />
-      <Hero />
-      <About />
-      <Projects />
-      <Publications />
-      <Experience />
-      <Skills />
-      <Education />
-      <Contact />
+      <Navigation activeSection={activeSection} onSectionChange={setActiveSection} />
+      <div className="animate-fade-in">
+        {renderSection()}
+      </div>
       
-      <footer className="py-8 text-center text-muted-foreground border-t">
-        <p>&copy; {new Date().getFullYear()} Tajwar Razib. All rights reserved.</p>
-      </footer>
+      {activeSection !== "home" && (
+        <footer className="py-8 text-center text-muted-foreground border-t">
+          <p>&copy; {new Date().getFullYear()} Tajwar Razib. All rights reserved.</p>
+        </footer>
+      )}
     </div>
   );
 };
