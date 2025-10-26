@@ -1,12 +1,22 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Award } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { GraduationCap, Award, ExternalLink } from "lucide-react";
 
 const Education = () => {
   const certifications = [
-    "COMSOL",
-    "Machine Learning and Deep Learning",
-    "ML Terminology and Process"
+    {
+      name: "COMSOL",
+      link: "https://drive.google.com/drive/folders/12gdXCw3QvUCCgx0EAMRK1fcZB1Oikc6O?usp=drive_link"
+    },
+    {
+      name: "Machine Learning and Deep Learning",
+      link: "https://drive.google.com/file/d/1SAl1wGhNzLdRje_9otasd99l8bnkhcpi/view"
+    },
+    {
+      name: "ML Terminology and Process",
+      link: "https://drive.google.com/file/d/1rEXv8vrq3QPDJWDrzkbmGNl3lEFaJgEs/view?usp=drivesdk"
+    }
   ];
 
   return (
@@ -62,11 +72,18 @@ const Education = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   Completed specialized training programs to enhance technical expertise in computational modeling, machine learning, and data-driven engineering approaches.
                 </p>
-                <div className="flex flex-wrap gap-3">
+                <div className="space-y-3">
                   {certifications.map((cert) => (
-                    <Badge key={cert} className="bg-primary/10 text-primary hover:bg-primary/20 px-4 py-2 text-sm">
-                      {cert}
-                    </Badge>
+                    <Button
+                      key={cert.name}
+                      variant="outline"
+                      className="w-full justify-start"
+                      onClick={() => window.open(cert.link, '_blank')}
+                    >
+                      <Award className="mr-2 h-4 w-4" />
+                      {cert.name}
+                      <ExternalLink className="ml-auto h-4 w-4" />
+                    </Button>
                   ))}
                 </div>
               </div>

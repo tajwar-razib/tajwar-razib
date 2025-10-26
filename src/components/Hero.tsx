@@ -22,15 +22,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Advancing the frontiers of Thermodynamics, Heat Transfer, Molecular Dynamics, Additive Manufacturing, and Machine Learning. Integrating computational simulations with data-driven techniques to transform energy systems and manufacturing innovation.
-          </p>
-
           <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button size="lg" className="gradient-primary hover-glow" onClick={() => window.location.href = 'mailto:tajwar021@gmail.com'}>
-              <Mail className="mr-2 h-5 w-5" />
-              Get In Touch
-            </Button>
             <Button size="lg" variant="outline" className="hover-glow" onClick={() => window.open('/CV_Tajwar_Razib.pdf', '_blank')}>
               <FileText className="mr-2 h-5 w-5" />
               Download CV

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Navigation from "@/components/Navigation";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/AppSidebar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
@@ -39,18 +40,27 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen">
-      <Navigation activeSection={activeSection} onSectionChange={setActiveSection} />
-      <div className="animate-fade-in">
-        {renderSection()}
+    <SidebarProvider>
+      <div className="min-h-screen flex w-full">
+        <AppSidebar activeSection={activeSection} onSectionChange={setActiveSection} />
+        
+        <main className="flex-1">
+          <header className="h-12 flex items-center border-b sticky top-0 bg-background/80 backdrop-blur-sm z-40">
+            <SidebarTrigger className="ml-2" />
+          </header>
+          
+          <div className="animate-fade-in">
+            {renderSection()}
+          </div>
+          
+          {activeSection !== "home" && (
+            <footer className="py-8 text-center text-muted-foreground border-t">
+              <p>&copy; {new Date().getFullYear()} Tajwar Razib. All rights reserved.</p>
+            </footer>
+          )}
+        </main>
       </div>
-      
-      {activeSection !== "home" && (
-        <footer className="py-8 text-center text-muted-foreground border-t">
-          <p>&copy; {new Date().getFullYear()} Tajwar Razib. All rights reserved.</p>
-        </footer>
-      )}
-    </div>
+    </SidebarProvider>
   );
 };
 
