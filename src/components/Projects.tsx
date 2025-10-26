@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Lightbulb, Flame, GraduationCap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Lightbulb, Flame, GraduationCap, ExternalLink } from "lucide-react";
 
 interface ProjectItemProps {
   title: string;
@@ -8,13 +9,12 @@ interface ProjectItemProps {
   role?: string;
   icon: React.ReactNode;
   tags: string[];
+  link?: string;
+  linkText?: string;
 }
 
-const ProjectItem = ({ title, description, role, icon, tags, link }: ProjectItemProps & { link?: string }) => (
-  <Card 
-    className="glass-effect p-6 hover-glow h-full cursor-pointer transition-transform hover:scale-105"
-    onClick={() => link && window.open(link, '_blank')}
-  >
+const ProjectItem = ({ title, description, role, icon, tags, link, linkText }: ProjectItemProps) => (
+  <Card className="glass-effect p-6 hover-glow h-full">
     <div className="space-y-4">
       <div className="flex gap-4">
         <div className="flex-shrink-0">
@@ -35,6 +35,16 @@ const ProjectItem = ({ title, description, role, icon, tags, link }: ProjectItem
           </Badge>
         ))}
       </div>
+      {link && linkText && (
+        <Button 
+          onClick={() => window.open(link, '_blank')}
+          className="w-full"
+          variant="outline"
+        >
+          <ExternalLink className="mr-2 h-4 w-4" />
+          {linkText}
+        </Button>
+      )}
     </div>
   </Card>
 );
@@ -47,7 +57,8 @@ const Projects = () => {
       role: "CAD Designer",
       icon: <Lightbulb className="h-6 w-6 text-primary-foreground" />,
       tags: ["Arduino", "CAD Design", "Automation", "Data Acquisition"],
-      link: "https://drive.google.com/file/d/1b39CfNAQKBFY-u_lT4Yjjo_d55X0Sn53/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1b39CfNAQKBFY-u_lT4Yjjo_d55X0Sn53/view?usp=sharing",
+      linkText: "Project Video"
     },
     {
       title: "Shell and Tube Heat Exchanger with Inclined Baffles",
@@ -55,7 +66,8 @@ const Projects = () => {
       role: "Python Programmer & Analyst",
       icon: <Flame className="h-6 w-6 text-primary-foreground" />,
       tags: ["Python", "Heat Transfer", "Thermal Analysis", "Design Optimization"],
-      link: "https://drive.google.com/file/d/1jd1Ycj3Aix3mQ44oLV0ojnwypAA_W6Hu/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1jd1Ycj3Aix3mQ44oLV0ojnwypAA_W6Hu/view?usp=sharing",
+      linkText: "Project Presentation"
     },
     {
       title: "ML-based Waste Heat Recovery Optimization",
@@ -63,7 +75,8 @@ const Projects = () => {
       role: "Undergraduate Thesis",
       icon: <GraduationCap className="h-6 w-6 text-primary-foreground" />,
       tags: ["Machine Learning", "ORC", "Optimization", "Energy Systems", "Metaheuristic Algorithms"],
-      link: "https://buetedu-my.sharepoint.com/:p:/g/personal/2010033_me_buet_ac_bd/EQ6Vm8mr1dJDoc79PflsDzUBttkp3Cj5HaZ5e5HcRPB7rw?e=zDXMhG"
+      link: "https://buetedu-my.sharepoint.com/:p:/g/personal/2010033_me_buet_ac_bd/EQ6Vm8mr1dJDoc79PflsDzUBttkp3Cj5HaZ5e5HcRPB7rw?e=zDXMhG",
+      linkText: "Thesis Predefence"
     }
   ];
 
