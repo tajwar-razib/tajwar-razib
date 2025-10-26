@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Publications from "@/components/Publications";
+import IndustrialAttachment from "@/components/IndustrialAttachment";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
@@ -22,6 +23,8 @@ const Index = () => {
         return <Projects />;
       case "publications":
         return <Publications />;
+      case "industrial-attachment":
+        return <IndustrialAttachment />;
       case "experience":
         return <Experience />;
       case "skills":

@@ -10,7 +10,7 @@ interface PublicationItemProps {
   type: "preprint" | "manuscript" | "conference" | "submitted";
 }
 
-const PublicationItem = ({ title, authors, venue, status, type }: PublicationItemProps) => {
+const PublicationItem = ({ title, authors, venue, status, type, link }: PublicationItemProps & { link?: string }) => {
   const getIcon = () => {
     switch (type) {
       case "preprint":
@@ -38,7 +38,10 @@ const PublicationItem = ({ title, authors, venue, status, type }: PublicationIte
   };
 
   return (
-    <Card className="glass-effect p-6 hover-glow">
+    <Card 
+      className={`glass-effect p-6 hover-glow ${link ? 'cursor-pointer transition-transform hover:scale-105' : ''}`}
+      onClick={() => link && window.open(link, '_blank')}
+    >
       <div className="flex gap-4">
         <div className="flex-shrink-0">
           <div className="h-10 w-10 rounded-lg gradient-primary flex items-center justify-center">
@@ -65,7 +68,8 @@ const Publications = () => {
       authors: "T. Razib, A. Saha",
       venue: "Authorea (au.176124781.14639217)",
       status: "Under Review",
-      type: "preprint" as const
+      type: "preprint" as const,
+      link: "https://doi.org/10.22541/au.176124781.14639217/v1"
     },
     {
       title: "Physics Informed Disentanglement of Multimodal Data on Additive Manufacturing by Variational Auto-Encoder",

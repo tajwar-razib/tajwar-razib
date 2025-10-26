@@ -63,7 +63,7 @@ const Contact = () => {
                 <Button 
                   className="w-full justify-start gradient-primary hover-glow" 
                   size="lg"
-                  onClick={() => window.open('https://linkedin.com/in/tajwar-razib', '_blank')}
+                  onClick={() => window.open('https://www.linkedin.com/in/tajwar-razib-19217a1aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', '_blank')}
                 >
                   <Linkedin className="mr-3 h-5 w-5" />
                   LinkedIn Profile

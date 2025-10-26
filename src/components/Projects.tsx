@@ -10,8 +10,11 @@ interface ProjectItemProps {
   tags: string[];
 }
 
-const ProjectItem = ({ title, description, role, icon, tags }: ProjectItemProps) => (
-  <Card className="glass-effect p-6 hover-glow h-full">
+const ProjectItem = ({ title, description, role, icon, tags, link }: ProjectItemProps & { link?: string }) => (
+  <Card 
+    className="glass-effect p-6 hover-glow h-full cursor-pointer transition-transform hover:scale-105"
+    onClick={() => link && window.open(link, '_blank')}
+  >
     <div className="space-y-4">
       <div className="flex gap-4">
         <div className="flex-shrink-0">
@@ -43,21 +46,24 @@ const Projects = () => {
       description: "Automated the reading acquisition from Saybolt Viscometer using sensors and Arduino programming. Designed the complete CAD system for the project, integrating hardware and software components for accurate viscosity measurements.",
       role: "CAD Designer",
       icon: <Lightbulb className="h-6 w-6 text-primary-foreground" />,
-      tags: ["Arduino", "CAD Design", "Automation", "Data Acquisition"]
+      tags: ["Arduino", "CAD Design", "Automation", "Data Acquisition"],
+      link: "https://drive.google.com/file/d/1b39CfNAQKBFY-u_lT4Yjjo_d55X0Sn53/view?usp=sharing"
     },
     {
       title: "Shell and Tube Heat Exchanger with Inclined Baffles",
       description: "Designed and built a shell and tube heat exchanger featuring inclined baffles for improved thermal performance. Developed Python-based analysis tools for comprehensive heat exchange evaluation and optimization.",
       role: "Python Programmer & Analyst",
       icon: <Flame className="h-6 w-6 text-primary-foreground" />,
-      tags: ["Python", "Heat Transfer", "Thermal Analysis", "Design Optimization"]
+      tags: ["Python", "Heat Transfer", "Thermal Analysis", "Design Optimization"],
+      link: "https://drive.google.com/file/d/1jd1Ycj3Aix3mQ44oLV0ojnwypAA_W6Hu/view?usp=sharing"
     },
     {
       title: "ML-based Waste Heat Recovery Optimization",
       description: "Machine Learning based Comparative Study of Waste Heat Recovery in Combined Organic Rankine Cycle-Gas Turbine and Conventional Steam Turbine Powerplants. Applied metaheuristic algorithms for working fluid mixture optimization to maximize energy efficiency.",
       role: "Undergraduate Thesis",
       icon: <GraduationCap className="h-6 w-6 text-primary-foreground" />,
-      tags: ["Machine Learning", "ORC", "Optimization", "Energy Systems", "Metaheuristic Algorithms"]
+      tags: ["Machine Learning", "ORC", "Optimization", "Energy Systems", "Metaheuristic Algorithms"],
+      link: "https://buetedu-my.sharepoint.com/:p:/g/personal/2010033_me_buet_ac_bd/EQ6Vm8mr1dJDoc79PflsDzUBttkp3Cj5HaZ5e5HcRPB7rw?e=zDXMhG"
     }
   ];
 

@@ -15,6 +15,7 @@ const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
     { label: "About", value: "about" },
     { label: "Projects", value: "projects" },
     { label: "Publications", value: "publications" },
+    { label: "Industrial Attachment", value: "industrial-attachment" },
     { label: "Experience", value: "experience" },
     { label: "Skills", value: "skills" },
     { label: "Education", value: "education" },
