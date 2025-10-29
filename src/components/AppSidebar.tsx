@@ -36,7 +36,7 @@ export function AppSidebar({ activeSection, onSectionChange }: AppSidebarProps) 
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>
-            {state === "expanded" && <span className="text-lg font-bold gradient-text">Tajwar Razib</span>}
+            {state === "expanded" && <span className="text-2xl font-bold gradient-text">Tajwar Razib</span>}
           </SidebarGroupLabel>
           
           <SidebarGroupContent>
@@ -46,10 +46,18 @@ export function AppSidebar({ activeSection, onSectionChange }: AppSidebarProps) 
                   <SidebarMenuButton
                     onClick={() => onSectionChange(item.value)}
                     isActive={activeSection === item.value}
-                    className="cursor-pointer"
+                    className={`cursor-pointer py-6 transition-all duration-300 ${
+                      activeSection === item.value 
+                        ? "bg-primary/10 border-l-4 border-primary scale-105" 
+                        : "hover:bg-muted/50 hover:scale-102"
+                    }`}
                   >
-                    <item.icon className="h-4 w-4" />
-                    <span>{item.label}</span>
+                    <item.icon className={`transition-all duration-300 ${
+                      activeSection === item.value ? "h-6 w-6" : "h-5 w-5"
+                    }`} />
+                    <span className={`font-medium transition-all duration-300 ${
+                      activeSection === item.value ? "text-lg font-bold" : "text-base"
+                    }`}>{item.label}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}

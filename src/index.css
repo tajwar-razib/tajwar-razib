@@ -6,51 +6,51 @@
 
 @layer base {
   :root {
-    /* Base Colors - Professional gradient palette */
-    --background: 220 25% 98%;
-    --foreground: 220 40% 10%;
+    /* Dark & Elegant Color Scheme */
+    --background: 240 15% 8%;
+    --foreground: 240 10% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 40% 10%;
+    --card: 240 12% 12%;
+    --card-foreground: 240 10% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 40% 10%;
+    --popover: 240 12% 12%;
+    --popover-foreground: 240 10% 95%;
 
-    /* Primary - Deep professional blue */
-    --primary: 220 85% 50%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 220 85% 65%;
+    /* Primary - Elegant Gold */
+    --primary: 45 95% 65%;
+    --primary-foreground: 240 15% 8%;
+    --primary-glow: 45 95% 75%;
 
-    /* Secondary - Vibrant purple accent */
-    --secondary: 270 70% 55%;
+    /* Secondary - Deep Purple */
+    --secondary: 265 60% 50%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-glow: 270 70% 70%;
+    --secondary-glow: 265 60% 65%;
 
-    /* Accent - Energetic cyan */
-    --accent: 190 90% 50%;
+    /* Accent - Luxurious Teal */
+    --accent: 180 70% 45%;
     --accent-foreground: 0 0% 100%;
-    --accent-glow: 190 90% 65%;
+    --accent-glow: 180 70% 60%;
 
-    --muted: 220 20% 94%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 240 10% 18%;
+    --muted-foreground: 240 8% 65%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 88%;
-    --input: 220 20% 88%;
-    --ring: 220 85% 50%;
+    --border: 240 10% 22%;
+    --input: 240 10% 22%;
+    --ring: 45 95% 65%;
 
     --radius: 0.75rem;
 
-    /* Custom gradient stops */
-    --gradient-start: 220 85% 50%;
-    --gradient-middle: 250 75% 55%;
-    --gradient-end: 270 70% 55%;
+    /* Custom gradient stops - Elegant dark gradients */
+    --gradient-start: 45 95% 65%;
+    --gradient-middle: 35 85% 55%;
+    --gradient-end: 265 60% 50%;
     
     /* Effect colors */
-    --shadow-color: 220 85% 50%;
-    --glow-color: 220 85% 65%;
+    --shadow-color: 45 95% 35%;
+    --glow-color: 45 95% 55%;
   }
 
   .dark {

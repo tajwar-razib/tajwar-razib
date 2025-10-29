@@ -43,19 +43,6 @@ const Education = () => {
                   <p className="text-lg text-muted-foreground font-medium">Bangladesh University of Engineering and Technology (BUET)</p>
                   <p className="text-muted-foreground">Expected Graduation: March 2026</p>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="px-4 py-2 rounded-lg glass-effect">
-                    <p className="text-sm text-muted-foreground">Current CGPA</p>
-                    <p className="text-2xl font-bold gradient-text">3.69 / 4.00</p>
-                  </div>
-                  <div className="px-4 py-2 rounded-lg glass-effect">
-                    <p className="text-sm text-muted-foreground">Completed</p>
-                    <p className="text-2xl font-bold gradient-text">6 Semesters</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  Specializing in advanced thermodynamics, heat transfer, molecular dynamics, and machine learning applications in mechanical engineering. Conducting research on energy systems optimization and sustainable technologies.
-                </p>
               </div>
             </div>
           </Card>
@@ -69,9 +56,6 @@ const Education = () => {
               </div>
               <div className="flex-1 space-y-4">
                 <h3 className="text-2xl font-bold">Professional Certifications</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Completed specialized training programs to enhance technical expertise in computational modeling, machine learning, and data-driven engineering approaches.
-                </p>
                 <div className="space-y-3">
                   {certifications.map((cert) => (
                     <Button
