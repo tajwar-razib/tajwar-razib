@@ -33,11 +33,7 @@ const About = () => {
             <p className="text-muted-foreground leading-relaxed">
               Currently completing my Bachelor's in Mechanical Engineering at Bangladesh University of Engineering and Technology (BUET), I'm dedicated to advancing interdisciplinary research across multiple scientific fields. My work focuses on leveraging cutting-edge machine learning algorithms and computational techniques to revolutionize energy efficiency and additive manufacturing processes.
             </p>
-            <div className="grid grid-cols-2 gap-4 pt-4">
-              <Card className="p-4 text-center glass-effect hover-glow">
-                <div className="text-3xl font-bold gradient-text">3.69</div>
-                <div className="text-sm text-muted-foreground mt-2">CGPA / 4.00</div>
-              </Card>
+            <div className="flex justify-center pt-4">
               <Card className="p-4 text-center glass-effect hover-glow">
                 <div className="text-3xl font-bold gradient-text">10+</div>
                 <div className="text-sm text-muted-foreground mt-2">Research Publications</div>

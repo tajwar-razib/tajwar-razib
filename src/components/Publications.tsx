@@ -112,7 +112,7 @@ const Publications = () => {
     {
       title: "Thermodynamic Analysis of a Bottoming Organic Rankine Cycle for Waste Heat Recovery",
       venue: "BSME 2024",
-      status: "Published",
+      status: "Waiting to be Published",
       type: "conference" as const,
       abstract: "Waste Heat Recovery has received a lot of attention in recent years due to the increasing environmental effect. Fossil-fuel driven powerplants are major contributors to global warming. So Organic Rankine Cycle (ORC) can work as the bottoming cycle to utilize this low-grade waste heat to lower carbon emissions as well as contribute to power generation. However, the working conditions for the ORC must be compatible with the Gas Turbine System. This study performs a thorough thermodynamic analysis of a bottoming ORC cycle. It is observed that each working fluid achieves its highest thermal and exergetic efficiencies in the critical region. However, the topping cycle shows acceptable power output at turbine outlet temperatures above 450 K, corresponding to a turbine inlet temperature of approximately 435 K for the bottoming ORC. Within this temperature range, Benzene and Isopentane are acceptable working fluids, as their critical temperatures exceed 435 K. However, considering the fluid quality at the ORC turbine outlet, Isopentane shows better results than Benzene."
     },
