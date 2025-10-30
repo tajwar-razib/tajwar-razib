@@ -45,8 +45,8 @@ const Index = () => {
         <AppSidebar activeSection={activeSection} onSectionChange={setActiveSection} />
         
         <main className="flex-1">
-          <header className="h-12 flex items-center border-b sticky top-0 bg-background/80 backdrop-blur-sm z-40">
-            <SidebarTrigger className="ml-2" />
+          <header className="h-16 md:h-12 flex items-center border-b sticky top-0 bg-background/80 backdrop-blur-sm z-40">
+            <SidebarTrigger className="ml-3 md:ml-2 h-10 w-10 md:h-8 md:w-8" />
           </header>
           
           <div className="animate-fade-in">
