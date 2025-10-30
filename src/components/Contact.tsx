@@ -81,10 +81,12 @@ const Contact = () => {
                 <Button 
                   className="w-full justify-start gradient-primary hover-glow" 
                   size="lg"
-                  onClick={() => window.location.href = 'mailto:tajwar021@gmail.com'}
+                  asChild
                 >
-                  <Mail className="mr-3 h-5 w-5" />
-                  Send Email
+                  <a href="mailto:tajwar021@gmail.com">
+                    <Mail className="mr-3 h-5 w-5" />
+                    Send Email
+                  </a>
                 </Button>
               </div>
             </Card>
