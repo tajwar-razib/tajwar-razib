@@ -38,13 +38,11 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/tajwar-razib-19217a1aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="h-6 w-6" />
             </a>
-            <a 
-              href="mailto:tajwar021@gmail.com" 
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=tajwar021@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-foreground/60 hover:text-primary transition-colors hover:scale-110 transform duration-200"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = 'mailto:tajwar021@gmail.com';
-              }}
             >
               <Mail className="h-6 w-6" />
             </a>
