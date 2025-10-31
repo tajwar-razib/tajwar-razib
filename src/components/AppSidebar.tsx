@@ -32,7 +32,7 @@ export function AppSidebar({ activeSection, onSectionChange }: AppSidebarProps) 
   const { state } = useSidebar();
 
   return (
-    <Sidebar collapsible="icon">
+    <Sidebar collapsible="icon" className="border-r-2 border-primary/30">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>
