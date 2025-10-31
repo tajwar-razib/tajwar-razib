@@ -46,7 +46,7 @@ const Index = () => {
         
         <main className="flex-1">
           <header className="h-16 md:h-12 flex items-center border-b sticky top-0 bg-background/80 backdrop-blur-sm z-40">
-            <SidebarTrigger className="ml-3 md:ml-2 h-12 w-12 md:h-10 md:w-10 text-primary hover:text-primary/80 [&>svg]:stroke-[2.5]" />
+            <SidebarTrigger className="ml-3 md:ml-2 h-12 w-12 md:h-10 md:w-10 text-primary hover:text-primary/80 [&>svg]:stroke-[2.5] border-2 border-primary rounded-md" />
           </header>
           
           <div className="animate-fade-in">
