@@ -99,6 +99,11 @@ const Publications = () => {
       link: "https://doi.org/10.22541/au.176124781.14639217/v1"
     },
     {
+      title: "Analytical Analysis of LPBF using Rosenthal Thermal Equations and Application of Agentic AI",
+      status: "In Preparation",
+      type: "manuscript" as const
+    },
+    {
       title: "Physics Informed Disentanglement of Multimodal Data on Additive Manufacturing by Variational Auto-Encoder",
       status: "In Preparation",
       type: "manuscript" as const
@@ -126,7 +131,7 @@ const Publications = () => {
     {
       title: "Application of Bayesian Optimization on Design and Working Parameters of an Inclined baffle Shell and Tube Heat Exchanger",
       venue: "ASTFE 2026",
-      status: "Submitted",
+      status: "Abstract Accepted",
       type: "submitted" as const,
       abstract: "Shell and Tube Heat Exchangers (STHX) have been employed in industrial applications since its introduction. Despite extensive utilization, achieving the optimal design for certain operating conditions such as Inlet Temperatures that are controlled by the process- remains challenging and may lead to suboptimal heat transfer, resulting in heightened energy consumption, extended operational periods, and increased maintenance costs. This work seeks to enhance the design and working parameters of inclined baffle shell and tube heat exchangers by Bayesian Optimization to maximize the total heat transfer coefficient. The study develops a comprehensive Machine Learning framework enabling users to define the Shell Side Inlet Temperature and Tube Side Inlet Temperature. The optimized system will provide the ideal combinations of Shell Mass Flow Rate, Tube Mass Flow Rate, Baffle Spacing, Baffle Angle, and Shell Diameter to maximize the overall heat transfer coefficient under optimal conditions. Six Machine Learning models—Lasso Regression, Random Forest Regression, Decision Tree Regression, Support Vector Regression, Gradient Boosting Regression, and Polynomial Regression -were employed for approximation on a simulated dataset consisting of 78,125 data points. The Gradient Boosting Regressor proved to be the most efficient model, attaining Mean Squared Error, Mean Absolute Error, Mean Relative Error, and R-squared values of 0.98, 0.739, 0.0023, and 0.99989, respectively. The Gradient Boosting Regressor, fine-tuned with appropriate hyperparameters has been utilized as the Surrogate Function for the optimization model."
     },
@@ -136,13 +141,6 @@ const Publications = () => {
       status: "Accepted",
       type: "conference" as const,
       abstract: "This research investigated a case of predictive modeling and optimization of a gas turbine cogeneration facility using machine learning techniques combined with an advanced Particle Swarm Optimization (PSO) algorithm. Five machine learning models, K-Nearest Neighbors (KNN), Random Forest Regression (RFR), Decision Tree Regression (DTR), Support Vector Regression (SVR), and Gradient Boosting Regression (GBR), were used to train using turbine operational data to predict turbine thermal efficiency in order to examine their performance. The GBR had the best predicting accuracy with a Mean Absolute Error (MAE) of 0.00836, Mean Relative Error (MRE) of 0.00030, Mean Squared Error (MSE) of 0.00012, and R² of 0.99967. Then, an Improved PSO Algorithm was applied to the turbine flow rates in order to find gas turbine thermal efficiency maximization. Over several iterations, the majority of the PSO runs converged within 15 iterations to a maximum thermal efficiency of 32.62%. This value was very similar to the highest value of 32.63% identified in the dataset. Further analysis of the populations while the PSO algorithm converged showed that the metrics for population diversity were smooth between the exploratory to the exploitative phases. For the optimized maximum efficiency, each flow rates were achieved at the optimized condition. The pre- and post-optimization flow rate of gas into the turbine has had an upward adjusted entry flow rate, and boosted the compressor and boiler gas flows while decreased combustor outlet gas flows, which maintains the established limits of the gas turbine. The study produced a solid foundation to be used for the real-time prediction of performance, and operational optimization of gas turbine facilities."
-    },
-    {
-      title: "A Comparative Analysis of Basic and Regenerative Organic Rankine Cycle with a Reactive Flow Model",
-      venue: "ICME 2025",
-      status: "Submitted",
-      type: "submitted" as const,
-      abstract: "In recent years, waste-heat-recovery has emerged as a crucial area of research among researchers due to its potential to support sustainable energy landscape and help meet climate targets and regulations. The dependency on fossil-fuel of conventional powerplants works as one of the major contributors to global warming and climate change. Organic Rankine Cycle (ORC), working as a bottoming cycle, can be a promising approach to utilize this low-grade waste heat, thereby lowering carbon emissions as well as contributing to power generation. However, the working conditions for the ORC system working with a Reactive Flow Model needs to be mutually compatible. Furthermore, integrating a regenerator to recover additional heat from exhaust can enhance the overall performance of the ORC system. This study provides a comprehensive thermodynamic analysis, comparing two configurations of bottoming ORC cycle: Basic Organic Rankine Cycle (BORC) and Regenerative Organic Rankine Cycle (RORC), using three working fluids-R1234yf, R365MFC and MM, ranging in three distinct optimal heat source requirement regions and compatibility with a Reactive Flow Model-Gas Turbine (GT). It is observed that apart from the lower critical temperature refrigerant R1234yf, RORC shows higher thermal efficiency than BORC while exergetic efficiencies remain higher in RORC for all three cases. Notably, the BORC-based combined cycle starts to exhibit acceptable power output at turbine inlet temperature above 450K whereas the temperature requirement for RORC-based combined cycle is quite lower being at 350 K."
     }
   ];
 
