@@ -132,9 +132,9 @@ const Publications = () => {
     },
     {
       title: "Application of Improved Particle Swarm Optimization (PSO) on a Gas Turbine Model",
-      venue: "ICME 2025",
-      status: "Submitted",
-      type: "submitted" as const,
+      venue: "IEOM 2025",
+      status: "Accepted",
+      type: "conference" as const,
       abstract: "This research investigated a case of predictive modeling and optimization of a gas turbine cogeneration facility using machine learning techniques combined with an advanced Particle Swarm Optimization (PSO) algorithm. Five machine learning models, K-Nearest Neighbors (KNN), Random Forest Regression (RFR), Decision Tree Regression (DTR), Support Vector Regression (SVR), and Gradient Boosting Regression (GBR), were used to train using turbine operational data to predict turbine thermal efficiency in order to examine their performance. The GBR had the best predicting accuracy with a Mean Absolute Error (MAE) of 0.00836, Mean Relative Error (MRE) of 0.00030, Mean Squared Error (MSE) of 0.00012, and R² of 0.99967. Then, an Improved PSO Algorithm was applied to the turbine flow rates in order to find gas turbine thermal efficiency maximization. Over several iterations, the majority of the PSO runs converged within 15 iterations to a maximum thermal efficiency of 32.62%. This value was very similar to the highest value of 32.63% identified in the dataset. Further analysis of the populations while the PSO algorithm converged showed that the metrics for population diversity were smooth between the exploratory to the exploitative phases. For the optimized maximum efficiency, each flow rates were achieved at the optimized condition. The pre- and post-optimization flow rate of gas into the turbine has had an upward adjusted entry flow rate, and boosted the compressor and boiler gas flows while decreased combustor outlet gas flows, which maintains the established limits of the gas turbine. The study produced a solid foundation to be used for the real-time prediction of performance, and operational optimization of gas turbine facilities."
     },
     {
