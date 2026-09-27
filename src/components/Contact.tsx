@@ -36,8 +36,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <a href="tel:+8801782510340" className="text-muted-foreground hover:text-primary transition-colors">
-                    +880 1782510340
+                  <a href="tel:+15188808696" className="text-muted-foreground hover:text-primary transition-colors">
+                    +1 (518) 880-8696
                   </a>
                 </div>
               </div>
@@ -50,7 +50,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Location</h3>
-                  <p className="text-muted-foreground">Bashundhara R/A, Dhaka, Bangladesh</p>
+                  <p className="text-muted-foreground">Troy, NY, United States</p>
                 </div>
               </div>
             </Card>

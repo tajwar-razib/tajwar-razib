@@ -46,7 +46,7 @@ const Skills = () => {
     {
       icon: <Wrench className="h-5 w-5 text-primary-foreground" />,
       title: "Research Expertise",
-      skills: ["Machine Learning", "Deep Learning", "Thermodynamics", "Heat Transfer", "Molecular Dynamics", "Additive Manufacturing", "Control Systems", "Metaheuristic Algorithms"]
+      skills: ["Additive Manufacturing", "Machine Learning", "Deep Learning", "Thermodynamics", "Control Systems", "Metaheuristic Algorithms"]
     }
   ];
 
