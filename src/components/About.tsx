@@ -12,21 +12,18 @@ const About = () => {
           <p className="text-muted-foreground text-lg">Get to know me better</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="animate-slide-in">
-            <Card className="glass-effect p-8 hover-glow">
-              <div className="aspect-square rounded-2xl overflow-hidden">
-                <img 
-                  src={profileImage} 
-                  alt="Tajwar Razib - Mechanical Engineering Researcher" 
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-6 animate-slide-up">
+            <div className="flex items-center gap-5">
+              <div className="h-24 w-24 md:h-32 md:w-32 rounded-2xl overflow-hidden border-2 border-primary/40 shadow-lg flex-shrink-0 hover-glow">
+                <img
+                  src={profileImage}
+                  alt="Tajwar Razib - Mechanical Engineering Researcher"
                   className="w-full h-full object-cover"
                 />
               </div>
-            </Card>
-          </div>
-
-          <div className="space-y-6 animate-slide-up">
-            <h3 className="text-3xl font-bold">Engineering Researcher</h3>
+              <h3 className="text-3xl font-bold">Engineering Researcher</h3>
+            </div>
             <p className="text-muted-foreground leading-relaxed">
               I am a passionate researcher working at the intersection of Additive Manufacturing, Thermodynamics, and Agentic AI. My research combines computational modeling, data-driven analysis, and intelligent systems to address complex engineering challenges.
             </p>
