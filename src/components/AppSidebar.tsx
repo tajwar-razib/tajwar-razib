@@ -19,12 +19,12 @@ interface AppSidebarProps {
 const navItems = [
   { label: "Home", value: "home", icon: Home },
   { label: "About", value: "about", icon: User },
-  { label: "Projects", value: "projects", icon: Code },
+  { label: "Education", value: "education", icon: GraduationCap },
   { label: "Publications", value: "publications", icon: FileText },
+  { label: "Projects", value: "projects", icon: Code },
   { label: "Industrial Attachment", value: "industrial-attachment", icon: Building2 },
   { label: "Experience", value: "experience", icon: Briefcase },
   { label: "Skills", value: "skills", icon: Award },
-  { label: "Education", value: "education", icon: GraduationCap },
   { label: "Contact", value: "contact", icon: Mail }
 ];
 
