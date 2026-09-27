@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Briefcase, Users, DollarSign, MessageSquare, Wrench } from "lucide-react";
+import { Users, DollarSign, MessageSquare, Wrench } from "lucide-react";
 
 interface ExperienceItemProps {
   title: string;
@@ -35,28 +34,28 @@ const Experience = () => {
     {
       title: "Vice President",
       organization: "Multiscale Mechanical Modeling and Research Network (MMMRN)",
-      period: "June 2025 – Present",
+      period: "June 2025 – June 2026",
       description: "Leading research-related programs and networking initiatives with alumni. Coordinating collaborative research projects and organizing academic events to foster knowledge exchange in mechanical engineering research.",
       icon: <Users className="h-6 w-6 text-primary-foreground" />
     },
     {
       title: "Treasurer",
       organization: "BUET Automobile Club (BAC)",
-      period: "March 2025 – Present",
+      period: "March 2025 – June 2026",
       description: "Managing financial records, budgeting, and coordinating fundraising activities for one of BUET's premier technical clubs. Ensuring transparent financial operations and resource allocation for club activities.",
       icon: <DollarSign className="h-6 w-6 text-primary-foreground" />
     },
     {
       title: "Director",
       organization: "BUET Debating Club (BUETDC)",
-      period: "April 2025 – Present",
+      period: "April 2025 – June 2026",
       description: "Leading event planning and member engagement initiatives. Organizing debates, workshops, and training sessions to enhance public speaking and critical thinking skills among club members.",
       icon: <MessageSquare className="h-6 w-6 text-primary-foreground" />
     },
     {
       title: "Vice Chairperson",
       organization: "G17 UAC Bangladesh",
-      period: "March 2024 – Present",
+      period: "March 2024 – June 2026",
       description: "Handling recruitment, onboarding, and team communications for the organization. Managing member relations and coordinating activities to support organizational growth and development.",
       icon: <Users className="h-6 w-6 text-primary-foreground" />
     },

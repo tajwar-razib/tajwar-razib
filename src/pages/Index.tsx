@@ -20,18 +20,18 @@ const Index = () => {
         return <Hero />;
       case "about":
         return <About />;
-      case "projects":
-        return <Projects />;
+      case "education":
+        return <Education />;
       case "publications":
         return <Publications />;
+      case "projects":
+        return <Projects />;
       case "industrial-attachment":
         return <IndustrialAttachment />;
       case "experience":
         return <Experience />;
       case "skills":
         return <Skills />;
-      case "education":
-        return <Education />;
       case "contact":
         return <Contact />;
       default:
