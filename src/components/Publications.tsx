@@ -116,8 +116,7 @@ const Publications = () => {
       venue: "Conference Proceeding",
       status: "Published",
       type: "conference" as const,
-      link: "https://doi.org/10.1063/5.0327926",
-      abstract: "Waste Heat Recovery has received a lot of attention in recent years due to the increasing environmental effect. Fossil-fuel driven powerplants are major contributors to global warming. So Organic Rankine Cycle (ORC) can work as the bottoming cycle to utilize this low-grade waste heat to lower carbon emissions as well as contribute to power generation. However, the working conditions for the ORC must be compatible with the Gas Turbine System. This study performs a thorough thermodynamic analysis of a bottoming ORC cycle. It is observed that each working fluid achieves its highest thermal and exergetic efficiencies in the critical region. However, the topping cycle shows acceptable power output at turbine outlet temperatures above 450 K, corresponding to a turbine inlet temperature of approximately 435 K for the bottoming ORC. Within this temperature range, Benzene and Isopentane are acceptable working fluids, as their critical temperatures exceed 435 K. However, considering the fluid quality at the ORC turbine outlet, Isopentane shows better results than Benzene."
+      link: "https://doi.org/10.1063/5.0327926"
     },
     {
       title: "A Comprehensive Study on Energy, COP, and Exergy of a Coupled ORC-VCC Cogeneration System Employing Dual Working Fluids",
@@ -125,8 +124,7 @@ const Publications = () => {
       venue: "Conference Proceeding",
       status: "Published",
       type: "conference" as const,
-      link: "https://dx.doi.org/10.2139/ssrn.6204778",
-      abstract: "This paper aims to provide a detailed performance evaluation of a combined power and refrigeration system consisting of an organic Rankine cycle driven vapor compression cycle employing dual fluids. Performance of the combined system is systematically interrogated utilizing the strategically chosen working fluids- MM, R-1234yf, R236ea, R245ca, R113, R124, based on their critical temperature ranging from 95℃ to 250℃. Thermal and exergy efficiencies of the combined system at various turbine inlet temperatures are observed to establish the thermodynamic analysis. The optimized results indicate that the highest energy and exergy efficiencies, achieved using a combination of R113 and R124 as working fluids, are over 70% and 27%, respectively. Results from the analyses indicate that fluid pairs with intermediate critical temperature differences yield superior thermodynamic performance, whereas larger differences reduce both types of efficiencies."
+      link: "https://dx.doi.org/10.2139/ssrn.6204778"
     },
     {
       title: "Application of Improved Particle Swarm Optimization (PSO) on a Gas Turbine Model",
@@ -134,8 +132,7 @@ const Publications = () => {
       venue: "Conference Proceeding",
       status: "Published",
       type: "conference" as const,
-      link: "https://doi.org/10.46254/BA08.20250303",
-      abstract: "This research investigated a case of predictive modeling and optimization of a gas turbine cogeneration facility using machine learning techniques combined with an advanced Particle Swarm Optimization (PSO) algorithm. Five machine learning models, K-Nearest Neighbors (KNN), Random Forest Regression (RFR), Decision Tree Regression (DTR), Support Vector Regression (SVR), and Gradient Boosting Regression (GBR), were used to train using turbine operational data to predict turbine thermal efficiency in order to examine their performance. The GBR had the best predicting accuracy with a Mean Absolute Error (MAE) of 0.00836, Mean Relative Error (MRE) of 0.00030, Mean Squared Error (MSE) of 0.00012, and R² of 0.99967. Then, an Improved PSO Algorithm was applied to the turbine flow rates in order to find gas turbine thermal efficiency maximization. Over several iterations, the majority of the PSO runs converged within 15 iterations to a maximum thermal efficiency of 32.62%. This value was very similar to the highest value of 32.63% identified in the dataset. Further analysis of the populations while the PSO algorithm converged showed that the metrics for population diversity were smooth between the exploratory to the exploitative phases. For the optimized maximum efficiency, each flow rates were achieved at the optimized condition. The pre- and post-optimization flow rate of gas into the turbine has had an upward adjusted entry flow rate, and boosted the compressor and boiler gas flows while decreased combustor outlet gas flows, which maintains the established limits of the gas turbine. The study produced a solid foundation to be used for the real-time prediction of performance, and operational optimization of gas turbine facilities."
+      link: "https://doi.org/10.46254/BA08.20250303"
     },
     {
       title: "Physics-Informed Disentanglement of Multimodal Data on Additive Manufacturing by Variational Auto-Encoder",

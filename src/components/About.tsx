@@ -1,4 +1,3 @@
-import { Card } from "@/components/ui/card";
 import profileImage from "@/assets/profile.jpg";
 
 const About = () => {
@@ -30,12 +29,6 @@ const About = () => {
             <p className="text-muted-foreground leading-relaxed">
               I am particularly interested in applying machine learning, computational methods, and autonomous AI frameworks to improve manufacturing processes, enhance process monitoring and decision-making, and optimize thermal and energy systems. My goal is to bridge traditional engineering principles with emerging AI technologies to develop smarter, more efficient, and reliable engineering solutions.
             </p>
-            <div className="flex justify-center pt-4">
-              <Card className="p-4 text-center glass-effect hover-glow">
-                <div className="text-3xl font-bold gradient-text">10+</div>
-                <div className="text-sm text-muted-foreground mt-2">Research Publications</div>
-              </Card>
-            </div>
           </div>
         </div>
       </div>
