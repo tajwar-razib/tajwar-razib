@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, FileText } from "lucide-react";
-import cvAsset from "@/assets/Tajwar_Razib_CV.pdf.asset.json";
 
 const Hero = () => {
   return (
@@ -32,7 +31,7 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button size="lg" variant="outline" className="hover-glow" onClick={() => window.open(cvAsset.url, '_blank', 'noopener,noreferrer')}>
+            <Button size="lg" variant="outline" className="hover-glow" onClick={() => window.open("/Tajwar_Razib_CV.pdf", '_blank', 'noopener,noreferrer')}>
               <FileText className="mr-2 h-5 w-5" />
               Download CV
             </Button>

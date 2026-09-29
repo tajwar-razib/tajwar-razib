@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
-import rensselaerLogo from "@/assets/rensselaer-logo.png.asset.json";
-import buetLogo from "@/assets/buet-logo.png.asset.json";
+import rensselaerLogo from "@/assets/rensselaer-logo.png";
+import buetLogo from "@/assets/buet-logo.png";
 
 const Education = () => {
   return (
@@ -17,7 +17,7 @@ const Education = () => {
           <Card className="glass-effect p-8 hover-glow animate-slide-in">
             <div className="flex gap-6">
               <div className="h-20 w-32 md:w-44 flex-shrink-0 overflow-hidden rounded-md bg-foreground p-2">
-                <img src={rensselaerLogo.url} alt="Rensselaer Polytechnic Institute logo" className="h-full w-full object-contain" />
+                <img src={rensselaerLogo} alt="Rensselaer Polytechnic Institute logo" className="h-full w-full object-contain" />
               </div>
               <div className="flex-1 space-y-2">
                 <h3 className="text-2xl font-bold">Graduate Teaching Assistant</h3>
@@ -30,7 +30,7 @@ const Education = () => {
           <Card className="glass-effect p-8 hover-glow animate-slide-in">
             <div className="flex gap-6">
               <div className="h-20 w-20 flex-shrink-0 overflow-hidden rounded-md bg-foreground p-1">
-                <img src={buetLogo.url} alt="Bangladesh University of Engineering and Technology logo" className="h-full w-full object-contain" />
+                <img src={buetLogo} alt="Bangladesh University of Engineering and Technology logo" className="h-full w-full object-contain" />
               </div>
               <div className="flex-1 space-y-4">
                 <div>

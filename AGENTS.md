@@ -1,3 +1,3 @@
 # Project Architecture
 
-- Store user-uploaded documents used by the website through Lovable Assets pointer files so downloads remain CDN-backed and repository-safe.
+- Bundle site media (logos, CV) in src/assets or public, not Lovable Asset pointers — the site is also deployed on Netlify, where /__l5e/ URLs do not resolve.
